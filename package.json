@@ -1,0 +1,53 @@
+{
+  "name": "et-js-boilerplate",
+  "version": "0.0.2",
+  "bin": "./bin/cli.js",
+  "description": "mine js proj boilerplate",
+  "main": "",
+  "scripts": {
+    "prebuild": "./scripts/clean.sh && ./scripts/link.sh && ./scripts/copylib.sh",
+    "build": "gulp",
+    "dev": "webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoist/et-js-boilerplate.git"
+  },
+  "keywords": [
+    "et",
+    "boilerplate",
+    "scaffolding",
+    "igoist"
+  ],
+  "author": "igoist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoist/et-js-boilerplate/issues"
+  },
+  "homepage": "https://github.com/igoist/et-js-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "chalk": "^2.0.1",
+    "commander": "^2.11.0",
+    "cross-spawn": "^5.1.0",
+    "css-loader": "^0.28.5",
+    "eslint": "^4.2.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-react": "^7.2.1",
+    "fs-extra": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.3.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
