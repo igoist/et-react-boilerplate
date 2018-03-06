@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import { AppContainer } from 'react-hot-loader';
 
 
-class Index extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>This is home!</h1>
-      </div>
-    );
-  }
+ReactDOM.render(
+  <AppContainer>
+    <App name='igoist' />
+  </AppContainer>,
+  document.getElementById('app')
+);
+
+if (module.hot) {
+  module.hot.accept();
 }
-
-ReactDOM.render(<Index />, document.getElementById('root'));
