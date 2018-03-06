@@ -5,7 +5,7 @@
   </a>
 </p>
 
-# et-react-boilerplate JS 样板 or 脚手架
+# et-react-boilerplate React 样板 or 脚手架
 
 [![npm package](https://img.shields.io/npm/v/et-js-boilerplate.svg?style=flat-square)](https://www.npmjs.org/package/et-js-boilerplate)
 [![NPM downloads](https://img.shields.io/npm/dm/et-js-boilerplate.svg?style=flat-square)](https://npmjs.org/package/et-js-boilerplate)
@@ -14,7 +14,9 @@ A personal or common proj initial proto with gulp、Webpack to bundle ES6, etc &
 
 
 ## 安装 Installation
+
 Install it once globally:
+
 ```sh
 npm install -g et-js-boilerplate
 ```
@@ -22,7 +24,9 @@ npm install -g et-js-boilerplate
 <br />
 
 ## 用法 Usage 
+
 To create a new project, run:
+
 ```sh
 # first step, create the boilerplate. If you want to install packages automatically, please add -i
 et-js-boilerplate [options] <project-directory>
@@ -51,13 +55,18 @@ npm run build
 <br />
 
 ## 开发 Development
+
 ```sh
 # 临时 js、scss 分开编译
 
 # js 部分，运行下面命令，通过 webpack 监听 js 改动，进行增量编译（webpack --watch 也是在内存中还是直接被编译到 dist？）
 # 之后会做相应变动，使得运行一个命令，自动监听 js 与 scss
 # 另外，新增页面的 js 入口文件需要更新到 webpack.config.js 的 entry 当中
+npm run start
+
+# or
 npm run dev
+# just pick one you like. You can even write a bash file
 ```
 
 <br />

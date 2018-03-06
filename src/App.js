@@ -1,7 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
 import Another from './Another';
-
+import '../public/css/index.css';
 
 class Index extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Index extends React.Component {
         <h1>This is home!</h1>
         <h1>This is home!</h1>
         <Counter />
-        <Another />
+        <Another name={ 'igoist' } />
       </div>
     );
   }

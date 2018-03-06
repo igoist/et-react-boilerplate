@@ -5,3 +5,6 @@ dist/
 
 *.css
 css/
+.sass-cache/
+
+package-lock.json
