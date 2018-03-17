@@ -1,16 +1,17 @@
 {
-  "name": "et-js-boilerplate",
+  "name": "et-react-boilerplate",
   "version": "0.0.9",
   "description": "mine min react HMR boilerplate",
   "scripts": {
-    "prebuild": "./scripts/clean.sh && ./scripts/link.sh && ./scripts/copylib.sh",
-    "build": "gulp",
+    "prebuildold": "./scripts/clean.sh && ./scripts/link.sh && ./scripts/copylib.sh",
+    "build": "webpack",
+    "buildold": "gulp",
     "dev": "webpack-dev-server --hot",
     "start": "webpack-dev-server --open --colors --hot"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igoist/et-js-boilerplate.git"
+    "url": "git+https://github.com/igoist/et-react-boilerplate.git"
   },
   "keywords": [
     "et",
@@ -21,9 +22,9 @@
   "author": "igoist",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/igoist/et-js-boilerplate/issues"
+    "url": "https://github.com/igoist/et-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/igoist/et-js-boilerplate#readme",
+  "homepage": "https://github.com/igoist/et-react-boilerplate#readme",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"

@@ -23,19 +23,13 @@ npm install -g et-js-boilerplate
 
 <br />
 
-## 用法 Usage 
 
-To create a new project, run:
+### 关于代码审查
 
-```sh
-# first step, create the boilerplate. If you want to install packages automatically, please add -i
-et-js-boilerplate [options] <project-directory>
-
-# next, cd into boilerplate's dir, excute npm init to customize your package.json
-cd <project-directory> && npm init
-```
+scss-lint 与 eslint
 
 <br />
+
 
 ## 部署 Deploy
 
@@ -71,6 +65,7 @@ npm run dev
 
 <br />
 
+
 ## 文件结构 File Structure
 ```
 root
@@ -89,6 +84,7 @@ root
 │   ├── sass
 │   └── views (html or tpl)
 ├── .babelrc
+├── .scss-lint.yml
 ├── .editorconfig
 ├── .gitignore
 ├── .nvmrc

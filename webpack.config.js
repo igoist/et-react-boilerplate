@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 
-const publicPath = './';
+const publicPath = '/';
 const srcPath = './src';
 
 const webpackConfig = {
