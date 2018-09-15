@@ -20,7 +20,7 @@ class App extends React.Component {
   loadMap() {
     let xhr = new XMLHttpRequest();
     xhr.overrideMimeType('application/json');
-    xhr.open('GET', './assets/map/img.json');
+    xhr.open('GET', './map/img.json');
     xhr.onload = () => {
       if (xhr.status >= 200 && xhr.status < 300) {
         const res = JSON.parse(xhr.response);
@@ -35,7 +35,6 @@ class App extends React.Component {
     const res = this.state.res;
     let imgs = [];
     if (res.dirname) {
-      console.log(res);
       imgs = [].map.call(res.imgs, (img, index) => {
         return <Img key={ index.toString() } basename={ img.basename } dirname={ res.dirname } />;
       });

@@ -7,7 +7,7 @@ class Img extends React.Component {
 
   render() {
     let { basename, dirname } = this.props;
-    dirname = './assets/img';
+    dirname = './img/target';
     return (
       <div className='wrap'>
         <img src={ dirname + '/' + basename } />
