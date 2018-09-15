@@ -1,0 +1,35 @@
+$bg-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-color;
+  margin: 0;
+}
+
+
+@import 'layout/_navigator';
+
+img {
+  width: 160px;
+}
+
+a {
+  background-color: transparent;
+  color: #1890ff;
+  outline: none;
+  text-decoration: none;
+  transition: color .3s;
+  cursor: pointer;
+}
+// for react-router-transition
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+}

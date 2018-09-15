@@ -1,8 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
-import Another from './Another';
 import Img from './Img';
-import '../public/css/index.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -43,7 +41,6 @@ class App extends React.Component {
       <div>
         <h1>This is home!</h1>
         <Counter />
-        <Another name={ 'igoist' } />
         { imgs }
       </div>
     );
