@@ -42,14 +42,7 @@ const webpackConfig = {
     new HtmlWebpackPlugin({
       template: path.resolve(path.resolve(__dirname, '..'), './public/index.html')
     })
-  ],
-  devServer: {
-    contentBase: './dist',
-    port: 3000,
-    publicPath: '/',
-    inline: true,
-    hotOnly: true
-  },
+  ]
 };
 
 module.exports = webpackConfig;
